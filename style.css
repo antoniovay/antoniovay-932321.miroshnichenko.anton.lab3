@@ -1,0 +1,87 @@
+:root {
+    --bg_color: #ffd1dc; /* основной цвет: пастельно-розовый */
+    --color-primary: #ffd1dc;
+    --color-accent: #343238; /* акцент: тёмно-серый */
+    --text_color: #29272b;
+    --link_color: #49304f;
+    --link_hover_color: #3f281f;
+    --focus_color: rgba(0, 0, 0, 0.48);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+aside {float: right;}
+
+.add_padding {padding-left: 35px;}
+
+body {
+    background-color: var(--bg_color);
+    color: var(--text_color);
+}
+
+body:has(input:focus, textarea:focus)::before {
+    content: "";
+    position: fixed;
+    inset: 0;
+    z-index: 1;
+    pointer-events: none;
+    background: var(--focus_color);
+}
+
+body > * {
+    position: relative;
+    z-index: 2;
+}
+
+/* position: static */
+img {
+    width: 100%;
+    position: static;
+}
+
+button {
+    width: 150px;
+    min-height: 32px;
+    position: static;
+    background-color: var(--color-accent);
+    color: #fff;
+    border: 1px solid var(--color-accent);
+    padding: 6px 10px;
+    cursor: pointer;
+}
+
+a {
+    color: var(--link_color);
+}
+
+a:hover {
+    color: var(--link_hover_color);
+    text-decoration: underline;
+}
+
+a:active {color: #29272b;}
+
+a:visited {
+    color: #512b42;
+    text-decoration: underline;
+}
+
+input:focus,
+textarea:focus,
+button:focus {
+    outline: 2px solid var(--color-accent);
+    outline-offset: 2px;
+}
+
+.parallax {
+    position: relative;
+    overflow: hidden;
+    transition: background-position 0.6s ease-out;
+}
+
+.parallax:hover {background-position: 48% 48%;}
+
+.bg_img {
+    background-image: url(images/background.png);
+    background-attachment: fixed;
+    background-position: center center;
+}
