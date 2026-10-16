@@ -22,4 +22,6 @@
 <img width="1469" height="724" alt="Image" src="https://github.com/user-attachments/assets/47e3b8ab-def4-4376-906f-92a6e3e63680" />
 <img width="1469" height="708" alt="Image" src="https://github.com/user-attachments/assets/e0fc711d-dacf-471b-bca9-bb7bb97728ae" />
 
++добавлены рамки
+
 #### \*Стили и цвета для задания придуманы ChatGPT
